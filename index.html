@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap JS</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Bootstrap -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	    <link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+	                	<span class="sr-only">Toggle navigation</span>
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+            		</button>
+					<a class="navbar-brand" href="#">LOGO</a>
+				</div>
+				<div class="collapse navbar-collapse" id="hamburger">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div id="kodilla-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				    <li data-target="#kodilla-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#kodilla-carousel" data-slide-to="1"></li>
+				    <li data-target="#kodilla-carousel" data-slide-to="2"></li>
+				    <li data-target="#kodilla-carousel" data-slide-to="3"></li>
+				    <li data-target="#kodilla-carousel" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="https://images.pexels.com/photos/880989/pexels-photo-880989.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="zegar">
+						<div class="carousel-caption">
+						Jak zatrzymać upływ czasu?
+						</div>
+					</div>
+					<div class="item">
+					<img src="https://images.pexels.com/photos/324030/pexels-photo-324030.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="kawa">
+						<div class="carousel-caption">
+						Popołudniowa kawa poprawia samopoczucie
+						</div>
+					</div>
+					<div class="item">
+					<img src="https://images.pexels.com/photos/881066/pexels-photo-881066.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="zdrowie">
+						<div class="carousel-caption">
+						Odżywiaj się zdrowo, poczujesz się lepiej
+						</div>
+					</div>
+					<div class="item">
+					<img src="https://images.pexels.com/photos/611328/pexels-photo-611328.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="zegar">
+						<div class="carousel-caption">
+						Wykorzystaj wakacje na chwilę relaksu
+						</div>
+					</div>
+					<div class="item">
+					<img src="https://images.pexels.com/photos/305255/pexels-photo-305255.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="zegar">
+						<div class="carousel-caption">
+						Kontakt z naturą
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#kodilla-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Poprzedni</span>
+				</a>
+				<a class="right carousel-control" href="#kodilla-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Następny</span>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="nav nav-pills nav-justified">
+				<li class="active"><a data-toggle="tab" href="#about">O mnie</a></li>
+				<li><a data-toggle="tab" href="#experience">Doświadczenie</a></li>
+				<li><a data-toggle="tab" href="#hobby">Hobby</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="about" class="tab-pane fade active in">
+					<h3>O mnie</h3>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio odio, vehicula ac lobortis non, pretium ac eros. Nam pulvinar magna vitae sapien varius malesuada. Sed scelerisque pharetra accumsan. Nullam id urna et metus congue consequat. Aliquam quis auctor nisl. Vivamus hendrerit fringilla egestas. Phasellus ac finibus ligula. Cras at mi est. Etiam vehicula vitae velit in blandit.</p>
+				</div>
+				<div id="experience" class="tab-pane fade">
+			  		<h3>Doświadczenie</h3>
+			  		<p class="text-justify">Maecenas rhoncus nibh dolor, vel porttitor ex consectetur ac. Nullam et mauris malesuada, porta lacus eget, venenatis libero. Vestibulum ut tortor ullamcorper, mollis urna sed, ultricies odio. Proin fermentum libero libero, non congue metus malesuada sit amet. Nam vestibulum dapibus feugiat. Suspendisse justo mi, tempor at lectus at, pretium mollis massa. Morbi non purus eget massa congue gravida sed quis lectus. Nunc quis tempor magna. Vivamus non nisi porta, lacinia justo non, feugiat felis. Sed quis nunc quis dolor congue blandit molestie et ipsum. Cras eget mi id ante mollis lacinia. Vivamus consequat vestibulum tellus. Nam sodales pellentesque nisi non congue. Aliquam accumsan vel dui ut viverra. Curabitur sed est et tellus laoreet porta.</p>
+				</div>
+				<div id="hobby" class="tab-pane fade">
+				  	<h3>Hoby</h3>
+				  	<p class="text-justify">Ut et orci eu lacus scelerisque porttitor id eu nulla. In gravida malesuada velit sit amet venenatis. Phasellus consectetur sagittis arcu, et feugiat urna porttitor ac. Morbi bibendum mauris a iaculis auctor. Phasellus sagittis ut velit ac consequat. Vestibulum rutrum viverra ipsum. Suspendisse feugiat sed sapien eget porttitor. Aenean at ultrices urna, sit amet aliquam ligula.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center">
+			<button type="button" class="btn btn-info btn-lg button-modal" data-toggle="modal" data-target="#author">
+			O autorze
+			</button>
+			<div id="author" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+	         				<h4>O autorze</h4>
+						</div>
+						<div class="modal-body">
+						<p class="text-justify">Vivamus porta ac est non consectetur. Nam id lorem et odio feugiat volutpat tempor id arcu. Phasellus euismod nunc suscipit nibh fringilla, at finibus tortor maximus. Morbi quis est vestibulum neque rutrum bibendum. Nunc pellentesque rutrum orci, fringilla luctus orci scelerisque a. Pellentesque sollicitudin metus at vehicula blandit. Nulla non nunc ligula.</p>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Powrót do strony głównej</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
